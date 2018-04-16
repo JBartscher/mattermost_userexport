@@ -10,6 +10,6 @@ The skript requieres 3 parameters in the following order:
 
 Example:
 ```
-C:\> python3 'https://chat.mattermost.com' 'myuser' 'mypassword'
+C:\> python3 'https://chat.mymattermost.com' 'myuser' 'mypassword'
 ```
 It will retrieve max. 2000 Users. If you whish to export more (or less) change the PAGES variable. Iam not aware that Mattermost tracks or even blocks Users who try to many connections to the Mattermost API, but iam not intreseted to find it out, so I added a sleep timer (5 Seconds), if you´re in a hurry you can change the wait timer Variable WAIT_SEC to 0.
