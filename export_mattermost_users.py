@@ -6,13 +6,14 @@ import json
 
 PAGES = 10 # will retrive 10*200 Users
 WAIT_SEC = 5
+API_VERSION = '4'
 
 if __name__ == "__main__":
     #check parametes
     if len(sys.argv) < 4:
         sys.exit("There must be 3 Parameters: mattermost server, username or email and password!")
 
-    URL =  sys.argv[1] + '/api/v4' 
+    URL =  sys.argv[1] + '/api/v' + API_VERSION
     LOGINURL = URL+"/users/login"
     USERSURL = URL + "/users"
 
